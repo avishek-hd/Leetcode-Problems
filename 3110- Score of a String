@@ -1,0 +1,11 @@
+
+#3110. Score of a String
+
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        sum=0
+        for i in range(len(s)-1):
+            a=int(ord(s[i]))
+            b=int(ord(s[i+1]))
+            sum+=abs(b-a)
+        return sum
