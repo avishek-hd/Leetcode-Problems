@@ -1,0 +1,9 @@
+#1672. Richest Customer Wealth
+
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        list=[]
+        for i in accounts:
+            list.append(sum(i))
+        
+        return max(list)
